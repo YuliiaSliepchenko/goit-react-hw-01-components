@@ -1,26 +1,26 @@
 import PropTypes from 'prop-types';
 
 export const Profile = ({ username , tag, location, avatar, stats}) => {
-    const usarStates = [
-        {
-        label:"Followers",
-        quantity: stats.followers
-        },
-        {
-            label:"Views",
-            quantity: stats.views  
-        },
-        { 
-            label:"Likes",
-            quantity: stats.likes
-    }
-    ];
+    // const usarStates = [
+    //     {
+    //     label:"Followers",
+    //     quantity: stats.followers
+    //     },
+    //     {
+    //         label:"Views",
+    //         quantity: stats.views  
+    //     },
+    //     { 
+    //         label:"Likes",
+    //         quantity: stats.likes
+    // }
+    // ];
     return (
     <div className="profile">
     <div className="description">
       <img
         src={avatar}
-        alt="User avatar"
+        alt={username}
         className="avatar"
       />
       <p className="name">{username}</p>
@@ -29,12 +29,18 @@ export const Profile = ({ username , tag, location, avatar, stats}) => {
     </div>
   
     <ul className="stats">
-        {usarStates.map(({label, quantity}) => 
-         <li key={label}>
-         <span className="label">{label}</span>
-         <span className="quantity">{quantity}</span>
-       </li>
-       )}
+    <li>
+      <span class="label">Followers</span>
+      <span class="quantity">{stats.followers}</span>
+    </li>
+    <li>
+      <span class="label">Views</span>
+      <span class="quantity">{stats.views}</span>
+    </li>
+    <li>
+      <span class="label">Likes</span>
+      <span class="quantity">{stats.likes}</span>
+    </li> 
     </ul>
   </div>)
 }
