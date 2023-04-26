@@ -1,0 +1,35 @@
+.statistics{
+    max-width: 600px;
+    padding: 50px;
+}
+.title{
+    display: flex;
+  justify-content: center;
+}
+.stat{
+display: flex;
+list-style: none;
+gap: 20px;
+}
+.item{
+ width: 100px;
+padding: 20px 25px;
+justify-content: center;
+
+font-weight: 600;
+font-size: 20px;
+line-height: 1.19;
+
+background-color: #0b0b0b38;
+color: white;
+
+}
+.percentage{
+  margin-top: 15px;
+
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.19;
+
+  color: white;
+}

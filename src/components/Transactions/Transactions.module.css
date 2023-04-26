@@ -1,0 +1,25 @@
+.transaction{
+    width: 1000px;
+    background-color: white;
+    font-weight: 600;
+font-size: 20px;
+line-height: 1.19;
+color: #a29f9f;
+padding: 10px 25px;
+}
+.tratsList{
+    padding: 50px 5px;
+}
+.title{
+    background-color: aqua;
+    color: white;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.19;
+
+    margin: 15px 0;
+}
+tr:nth-child(even){
+background-color: #1277f257;
+}
