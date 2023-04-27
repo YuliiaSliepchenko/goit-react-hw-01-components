@@ -9,8 +9,5 @@ export const FriendList = ({friends}) => {
 </ul>
     )}
     FriendList.propTypes = {
-        friends:PropTypes.exact
-        ({id:PropTypes.string,
-             avatar:PropTypes.img,
-              name:PropTypes.string, 
-              isOnline:PropTypes.boolean}), }
+        friends: PropTypes.array}
+       
