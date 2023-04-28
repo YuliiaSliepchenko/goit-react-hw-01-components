@@ -9,5 +9,5 @@ export const FriendList = ({friends}) => {
 </ul>
     )}
     FriendList.propTypes = {
-        friends: PropTypes.array}
+        friends: PropTypes.arrayOf}
        
