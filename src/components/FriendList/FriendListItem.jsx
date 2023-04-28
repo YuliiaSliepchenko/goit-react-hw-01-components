@@ -12,8 +12,9 @@ export const FriendListItem = ({avatar, name, isOnline, id }) => {
     )}
     
     FriendListItem.propTypes = {
-      friends:PropTypes.exact
-      ({id:PropTypes.number,
-           avatar:PropTypes.img,
+            id:PropTypes.number,
+            avatar:PropTypes.element,
             name:PropTypes.string, 
-            isOnline:PropTypes.boolean}), }
+            isOnline:PropTypes.bool, }
+
+            
